@@ -46,4 +46,4 @@ EXAMPLE_FASTQ = {
     }  
 
 ## Author:
-Liubov Minina
+Liubov Minina## HW5 check
