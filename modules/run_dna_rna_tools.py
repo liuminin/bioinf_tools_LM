@@ -47,9 +47,7 @@ def complement(seq: str) -> str:
     """
     use_rna = is_rna_pairs(seq)
 
-    # Исправление по замечанию: уход от if/elif
-    # Замена на словари + ' '.join(...)
-    # Словари сразу учитывают регистр
+   
     dna_map = {
         "A": "T", "a": "t",
         "T": "A", "t": "a",
@@ -88,8 +86,6 @@ def run_dna_rna_tools(*args):
             "Provide at least one sequence and a name for the procedure"
         )
 
-    # Исправление по замечанию:
-    # Все первые элементы это последовательности, а последний процедура
     *seqs, procedure = args
 
     funcs = {
